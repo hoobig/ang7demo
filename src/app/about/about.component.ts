@@ -6,10 +6,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./about.component.css']
 })
 export class AboutComponent implements OnInit {
+    product = {
+        name: 'test',
+        price: 100,
+        qty: 1
+    };
+    constructor() { }
 
-  constructor() { }
+    ngOnInit() {
+    }
 
-  ngOnInit() {
-  }
-
+    onNotify() {
+        window.alert('You will be notified when the product goes on sale');
+    }
 }
